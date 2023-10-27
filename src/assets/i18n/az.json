@@ -1,0 +1,87 @@
+{
+  "home": "Əsas",
+  "blog": "Layihələr",
+  "contact": "Bizim haqqımızda",
+  "quate": "Sadəlik bizim kredomuzdur",
+  "newOpportunitiesHeader": "yeni imkanlarи",
+  "newOpportunities": "MEGA+ 12 illik təcrübəmizin diktə etdiyi motivlərlə yaradılmış, ticarət obyektlərində baş vermiş çoxsaylı belə hallara və problemlərə əsaslanan, həlli ilə ticarət obyektinin işçilərinin fəaliyyətini və idarə edilməsini xeyli asanlaşdıran məhsuldur.",
+  "aboutProduct": "MEGA+ ticarət obyektinin və ya obyektlərinin idarə edilməsi və uçotu üçün nəzərdə tutulub. Bu, obyekti əməliyyat rejimində idarə etməyə və onun sonrakı uçotunu aparmağa imkan verən çox çevik sistemdir. Proqram aşağıdakı əməliyyatları yerinə yetirmək üçün nəzərdə tutulmuşdur.",
+  "programVisual": "Proqram vizual",
+  "button": "Контакты",
+  "buttonSeeMore": "daha çox Gör",
+
+  "address": "Didube Plaza, 116 Akaki Tsereteli",
+  "about Us": "About Us",
+
+  "subscribe": "Xəbərlərə abunə olun",
+  "subscribeButton": "Abunəlik",
+
+  "price": "Цены",
+  "priceParagraph": "Цена указана за месяц и включает услуги.Суммы указаны без учетом НДС",
+
+  "PriceSuper": "50$",
+  "priceSuperHeader": "SUPER",
+  "priceExtra": "40$",
+  "priceExtraHeader": "EXTRA",
+  "priceMini": "20$",
+  "priceMiniHeader": "MINI",
+  "licenseParagraphHeader": "Əlavə lisenziya 20$ Əsas modullar",
+  "BasicModules": "Standart yoxlama modulu",
+  "StandardCheckoutModule": "İctimai iaşə müəssisəsinin kassa modulu",
+  "Cashregister": "RS vasitəsilə alışlar",
+  "PurchasesThroughRS": "RS ilə qayıt",
+  "ReturnviaRS": "Məhsulları silin",
+  "WriteOffProducts": "kassa aparatının idarə edilməsi",
+  "cashRegisterManagement": "balansın idarə edilməsi",
+  "balanceManagement": "Anbarların idarə edilməsi",
+  "ManagementOfWarehouses": "Kateqoriyaları idarə edin",
+  "ManageCategories": "borcun idarə edilməsi",
+  "debtmanagement": "Müqavilələrin idarə edilməsi",
+  "ManagementOfContracts": "Anbarlar arasında hərəkət edin",
+  "MoveBetweenWarehouses": "Kadr məlumatlarının idarə edilməsi",
+  "ManagementOfPersonnelData": "Kadrların funksionallığının idarə edilməsi",
+  "ManagementOfPersonnelFunctionality": "Kadrların funksionallığının idarə edilməsi",
+
+  "Inventory": "İnventar",
+  "InventoryByGroup": "Qrup üzrə inventar",
+  "InventoryBySupplier": "Təchizatçı tərəfindən inventar",
+  "InventoryWithCompiledList": "Tərtib edilmiş siyahı ilə inventar",
+  "Inventory Android module": "İnventar Android modulu",
+
+  "SupportModules": "Dəstək modulları",
+  "CashBook": "Kassa kitabçası",
+  "StockManagement": "Səhmlərin idarə edilməsi",
+  "AutomaticBackup": "Avtomatik ehtiyat nüsxə",
+  "accumulationModule": "yığım modulu",
+  "LoyaltyModule": "Sadiqlik modulu",
+  "AutonomousCashRegister": "Avtonom kassa aparatı",
+  "AutomaticOrders": "Avtomatik sifarişlər",
+  "CalculationAndProduction": "Hesablama və istehsal",
+  "ProductConversion": "Məhsulun çevrilməsi",
+  "HourlyDiscounts": "Saatlıq endirimlər",
+
+  "reports": "hesabat verir",
+  "PurchaseReports": "Satınalma hesabatları",
+  "RealizationReports": "İcra hesabatları",
+  "GoodsMovementReport": "Malların hərəkəti haqqında hesabat",
+  "RealizationsWith": "Konosament ilə realizasiyalar",
+
+  "integration": "inteqrasiya",
+  "BOG": "BOG idxalı (xlsx)",
+  "TBC": "TBC idxalı (xlsx)",
+  "TBC Import": "TBC İdxal (İnteqrasiya)",
+  "IntegrationOfCashRegisters": "Kassa aparatlarının inteqrasiyası",
+  "BankTerminalIntegration": "Bank terminalının inteqrasiyası",
+  "IntegrationOfSmartScales": "Ağıllı tərəzilərin inteqrasiyası",
+  "BarcodeScannerIntegration": "Barkod skaneri inteqrasiyası",
+  "ListPrinterIntegration": "Siyahı printer inteqrasiyası",
+
+  "NumberOfNomenclature": "Nomenklatura sayı",
+  "unlimited": "limitsiz",
+  "orderButton": "Order",
+
+
+
+  "retailCardHeader":"Retail Sales"
+  
+}

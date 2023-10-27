@@ -1,0 +1,29 @@
+.bg-pink{
+    background-color: #ffe8f1;
+    a:hover{
+        color: black !important;
+    }
+}
+
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .custom-dropdown select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .custom-dropdown option {
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+  }
+  
+  .custom-dropdown option {
+    padding-left: 40px;
+    background-size: 30px;
+  }

@@ -1,0 +1,31 @@
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+// Configuration
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden !important;
+}
+
+.bg-color {
+  background-color: #c1dbf2;
+}
+
+.mdc-list-item__content {
+  text-overflow: ellipsis;
+  white-space: wrap !important;
+  overflow: auto !important;
+  align-self: center;
+  flex: 1;
+  pointer-events: none;
+}
+
+.mdc-list-item__primary-text {
+  white-space: wrap !important;
+  overflow: hidden;
+}

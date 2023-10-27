@@ -1,0 +1,29 @@
+<div class="container margin-top">
+  <div class="row mb-4" style="display: flex; flex-wrap: wrap">
+    <div class="col-sm" *ngFor="let blog of mainBlogData">
+      <div
+        class="card m-auto mt-4"
+        [routerLink]="blog.retailCardHeader"
+        style="width: 350px; height: 400px"
+      >
+        <img
+          src="{{ blog.photo }}"
+          class="card-img-top"
+          [alt]="blog.retailCardHeader"
+        />
+        <div class="card-body">
+          <h2 class="card-title fw-semibold mt-2">
+            {{ blog.retailCardHeader }}
+          </h2>
+
+          <button
+            class="btn btn-danger btn-round"
+            [routerLink]="blog.retailCardHeader"
+          >
+            {{ "buttonSeeMore" | translateMain }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

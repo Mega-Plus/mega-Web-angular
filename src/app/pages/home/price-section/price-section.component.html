@@ -1,0 +1,731 @@
+<div class="bg-quote w-100 back-color">
+  <img src="assets/images/price-wave.svg" style="width: 100vw" alt="" />
+</div>
+<div class="text-center main-cont p-5">
+  <div class="">
+    <h1 class="fw-bold fs-2">{{ "price" | translateMain | uppercase }}</h1>
+    <h1 class="fs-5">
+      {{ "priceParagraph" | translateMain }}
+    </h1>
+  </div>
+  <div class="container">
+    <div class="row w-100">
+      <div class="col-lg-4">
+        <div class="card text-center">
+          <div class="card-header">
+            <h1 class="mb-0 fw-bold">
+              {{ "priceSuperHeader" | translateMain }}
+            </h1>
+          </div>
+          <div class="card-body">
+            <h1 class="fw-bold p-2">{{ "PriceSuper" | translateMain }}</h1>
+            <p class="card-text">
+              {{ "licenseParagraphHeader" | translateMain }}
+            </p>
+            <mat-expansion-panel
+              [expanded]="compare"
+              class="m-3"
+              (opened)="compare = true"
+              (closed)="compare = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "BasicModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item class="text-center">
+                  <p>{{ "StandardCheckoutModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center"
+                  ><p>{{ "Cashregister" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "PurchasesThroughRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ReturnviaRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "WriteOffProducts" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "cashRegisterManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "balanceManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ManagementOfWarehouses" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ManageCategories" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "debtmanagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ManagementOfContracts" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "MoveBetweenWarehouses" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ManagementOfPersonnelData" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>
+                    {{ "ManagementOfPersonnelFunctionality" | translateMain }}
+                  </p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare2"
+              class="m-3"
+              (opened)="compare2 = true"
+              (closed)="compare2 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "Inventory" | translateMain }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "InventoryByGroup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "InventoryBySupplier" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "InventoryWithCompiledList" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "Inventory Android module" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              class="m-3"
+              [expanded]="compare3"
+              (opened)="compare3 = true"
+              (closed)="compare3 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "SupportModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "CashBook" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "StockManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "AutomaticBackup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "accumulationModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "LoyaltyModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutonomousCashRegister" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutomaticOrders" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "CalculationAndProduction" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "ProductConversion" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "HourlyDiscounts" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare4"
+              class="m-3"
+              (opened)="compare4 = true"
+              (closed)="compare4 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "reports" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "PurchaseReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "RealizationReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "GoodsMovementReport" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "RealizationsWith" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare5"
+              class="m-3"
+              (opened)="compare5 = true"
+              (closed)="compare5 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "integration" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "BOG" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "TBC" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "TBC Import" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "IntegrationOfCashRegisters" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "BankTerminalIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "IntegrationOfSmartScales" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "BarcodeScannerIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ListPrinterIntegration" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+            <div>
+              <h2 class="fs-4">
+                {{ "NumberOfNomenclature" | translateMain }}
+              </h2>
+              <p class="text-success fw-bold">
+                {{ "unlimited" | translateMain }}
+              </p>
+              <button type="button" class="btn btn-danger" routerLink="/contact">
+                {{ "orderButton" | translateMain }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-center m-2">
+          <div class="card-header">
+            <h1 class="mb-0 fw-bold">
+              {{ "priceExtraHeader" | translateMain }}
+            </h1>
+          </div>
+          <div class="card-body">
+            <h1 class="fw-bold p-2">{{ "priceExtra" | translateMain }}</h1>
+            <p class="card-text">
+              {{ "licenseParagraphHeader" | translateMain }}
+            </p>
+            <mat-expansion-panel
+              [expanded]="compare"
+              class="m-3"
+              (opened)="compare = true"
+              (closed)="compare = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "BasicModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item class="text-center">
+                  <p>{{ "StandardCheckoutModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "Cashregister" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "PurchasesThroughRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ReturnviaRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "WriteOffProducts" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "cashRegisterManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "balanceManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "ManagementOfWarehouses" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ManageCategories" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "debtmanagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "ManagementOfContracts" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "MoveBetweenWarehouses" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ManagementOfPersonnelData" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>
+                    {{ "ManagementOfPersonnelFunctionality" | translateMain }}
+                  </p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare2"
+              class="m-3"
+              (opened)="compare2 = true"
+              (closed)="compare2 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "Inventory" | translateMain }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "InventoryByGroup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "InventoryBySupplier" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "InventoryWithCompiledList" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "Inventory Android module" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              class="m-3"
+              [expanded]="compare3"
+              (opened)="compare3 = true"
+              (closed)="compare3 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "SupportModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "CashBook" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "StockManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "AutomaticBackup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "accumulationModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "LoyaltyModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutonomousCashRegister" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutomaticOrders" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                >
+                  <p class="text-danger">
+                    {{ "CalculationAndProduction" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "ProductConversion" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "HourlyDiscounts" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare4"
+              class="m-3"
+              (opened)="compare4 = true"
+              (closed)="compare4 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "reports" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "PurchaseReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "RealizationReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "GoodsMovementReport" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "RealizationsWith" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare5"
+              class="m-3"
+              (opened)="compare5 = true"
+              (closed)="compare5 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "integration" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "BOG" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "TBC" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "TBC Import" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "IntegrationOfCashRegisters" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "BankTerminalIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "IntegrationOfSmartScales" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "BarcodeScannerIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ListPrinterIntegration" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <div>
+              <h2 class="fs-4">
+                {{ "NumberOfNomenclature" | translateMain }}
+              </h2>
+              <p class="text-success fw-bold">
+                {{ "unlimited" | translateMain }}
+              </p>
+              <button type="button" class="btn btn-danger" routerLink="/contact">
+                {{ "orderButton" | translateMain }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-center m-2">
+          <div class="card-header">
+            <h1 class="mb-0 fw-bold">
+              {{ "priceMiniHeader" | translateMain }}
+            </h1>
+          </div>
+          <div class="card-body">
+            <h1 class="fw-bold p-2">{{ "priceMini" | translateMain }}</h1>
+            <p class="card-text">
+              {{ "licenseParagraphHeader" | translateMain }}
+            </p>
+            <mat-expansion-panel
+              [expanded]="compare"
+              class="m-3"
+              (opened)="compare = true"
+              (closed)="compare = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "BasicModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item class="text-center">
+                  <p>{{ "StandardCheckoutModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "Cashregister" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "PurchasesThroughRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ReturnviaRS" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "WriteOffProducts" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "cashRegisterManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "balanceManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "ManagementOfWarehouses" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "ManageCategories" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "debtmanagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "ManagementOfContracts" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                  ><p class="text-danger">
+                    {{ "MoveBetweenWarehouses" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ManagementOfPersonnelData" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>
+                    {{ "ManagementOfPersonnelFunctionality" | translateMain }}
+                  </p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare2"
+              class="m-3"
+              (opened)="compare2 = true"
+              (closed)="compare2 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "Inventory" | translateMain }}</mat-panel-title
+                >
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "InventoryByGroup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "InventoryBySupplier" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "InventoryWithCompiledList" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                >
+                  <p class="text-danger">
+                    {{ "Inventory Android module" | translateMain }}
+                  </p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              class="m-3"
+              [expanded]="compare3"
+              (opened)="compare3 = true"
+              (closed)="compare3 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "SupportModules" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through"
+                >
+                  <p class="text-danger">{{ "CashBook" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "StockManagement" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "AutomaticBackup" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "accumulationModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "LoyaltyModule" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutonomousCashRegister" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "AutomaticOrders" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>
+                    {{ "CalculationAndProduction" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "ProductConversion" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "HourlyDiscounts" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare4"
+              class="m-3"
+              (opened)="compare4 = true"
+              (closed)="compare4 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  >{{ "reports" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "PurchaseReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "RealizationReports" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "GoodsMovementReport" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "RealizationsWith" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel
+              [expanded]="compare5"
+              class="m-3"
+              (opened)="compare5 = true"
+              (closed)="compare5 = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ "integration" | translateMain }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-list role="list">
+                <mat-list-item role="listitem">
+                  <p>{{ "BOG" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem"
+                  ><p>{{ "TBC" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "TBC Import" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "IntegrationOfCashRegisters" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                  <p>{{ "BankTerminalIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item
+                  role="listitem"
+                  class="text-decoration-line-through text-danger"
+                >
+                  <p class="text-danger">
+                    {{ "IntegrationOfSmartScales" | translateMain }}
+                  </p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "BarcodeScannerIntegration" | translateMain }}</p>
+                </mat-list-item>
+                <mat-list-item role="listitem" class="text-center">
+                  <p>{{ "ListPrinterIntegration" | translateMain }}</p>
+                </mat-list-item>
+              </mat-list>
+            </mat-expansion-panel>
+            <div>
+              <h2 class="fs-4">{{ "NumberOfNomenclature" | translateMain }}</h2>
+              <p class="text-success fw-bold">1500</p>
+              <button type="button" class="btn btn-danger" routerLink="/contact">
+                {{ "orderButton" | translateMain }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</div>

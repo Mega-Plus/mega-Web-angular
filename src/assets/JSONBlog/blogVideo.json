@@ -1,0 +1,48 @@
+[
+  {
+    "retailCardHeader": "საცალო რეალიზაციები (Retail sales)",
+    "photo": "/assets/images/video1.png",
+    "video": "https://www.youtube.com/embed/70z7lGud-yI"
+  },
+  {
+    "retailCardHeader": "მომწოდებლების განყოფილება ზოგადი ნაწილი 1 (Suppliers vol 1)",
+    "photo": "/assets/images/1-Suppliers-vol-1.png",
+    "video": "https://www.youtube.com/embed/RMDNpSwMXx8"
+  },
+  {
+    "retailCardHeader": "აღწერა ნაწილი 1 (Inventory vol 1)",
+    "photo": "/assets/images/764-აღწერა-ნაწილი-1-Inventory-vol-1.png",
+    "video": "https://www.youtube.com/embed/NiLEdUSvVrc"
+  },
+  {
+    "retailCardHeader": "აღწერა ნაწილი 2 (Inventory vol 1)",
+    "photo": "/assets/images/764-აღწერა-ნაწილი-1-Inventory-vol-1.png",
+    "video": "https://www.youtube.com/embed/YQa_S37CK6s"
+  },
+  {
+    "retailCardHeader": "აღწერა ნაწილი 3 (Inventory vol 3)",
+    "photo": "/assets/images/აღწერა-ნაწილი-3-Inventory-vol-3.png",
+    "video": "https://www.youtube.com/embed/B776amdYHqc"
+  },
+  {
+    "retailCardHeader": "მიღება ( შტრიხკოდიანი პროდუქტები ) - Purchase vol 1",
+    "photo": "/assets/images/მიღება-შტრიხკოდიანი-პროდუქტები-Purchase-vol-1.png",
+    "video": "https://www.youtube.com/embed/TEA4kk8HIPM"
+  },
+  {
+    "retailCardHeader": "მიღება (ასაწონი პროდუქცია) - Purchase vol 3",
+    "photo": "/assets/images/აღწერა-ნაწილი-3-Inventory-vol-3.png",
+    "video": "https://www.youtube.com/embed/S93PRnDv8Gw"
+  },
+
+  {
+    "retailCardHeader": "მიღება ( შიდა ზედნადების ნომრით ) - Purchase vol 4",
+    "photo": "/assets/images/მიღება-შიდა-ზედნადების-ნომრით-Purchase-vol-4-YouTube.png",
+    "video": "https://www.youtube.com/embed/FqOeWmeQdK8"
+  },
+  {
+    "retailCardHeader": "უკან დაბრუნება ( გაწერა ) ( Return )",
+    "photo": "/assets/images/უკან-დაბრუნება-გაწერა-Return.png",
+    "video": "https://www.youtube.com/embed/BCs1Z434H3Y"
+  }
+]

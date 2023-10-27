@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg fs-5 bg-pink">
+  <div class="container m-auto p-2">
+    <a class="navbar-brand" routerLink="/home"
+      ><img src="/assets/images/LOGO3-1.png" alt="logo" width="100px"
+    /></a>
+    <button
+      class="navbar-toggler fixed-top ms-auto mx-3 bg-light mt-3"
+      type="button"
+      style="width: 60px"
+      [matMenuTriggerFor]="menu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <mat-menu #menu="matMenu" class="w-100 d-block" yPosition="above">
+      <button mat-menu-item>
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/home">
+            {{ "home" | translate }}
+          </a>
+        </li>
+      </button>
+
+      <button mat-menu-item>
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/blog">{{
+            "blog" | translate
+          }}</a>
+        </li>
+      </button>
+      <button mat-menu-item>
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/contact">{{
+            "contact" | translate
+          }}</a>
+        </li>
+      </button>
+
+      <form class="w-25 custom-dropdown">
+        <select id="mySelectId" (change)="switchLanguage($event)">
+          <option value="ge">GE</option>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+          <option value="az">AZ</option>
+          <option value="uz">UZ</option>
+        </select>
+      </form>
+    </mat-menu>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/home">{{
+            "home" | translate
+          }}</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/blog">{{
+            "blog" | translate
+          }}</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link active text-secondary" routerLink="/contact">{{
+            "contact" | translate
+          }}</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item m-1 ml-auto">
+          <form class="w-25 custom-dropdown">
+            <select id="mySelectId" #lang (change)="switchLanguage(lang.value)">
+              <option value="ge">GE</option>
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="az">AZ</option>
+              <option value="uz">UZ</option>
+            </select>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
