@@ -8,6 +8,8 @@ import { PagesComponent } from './pages.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { CardPageComponent } from './blog-page/card-page/card-page.component';
+import { DocumetationComponent } from './documetation/documetation.component';
+import { CategoryComponent } from './documetation/category/category.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,12 @@ const routes: Routes = [
   {
     path: 'blog/:title',
     component: CardPageComponent,
+  },
+
+  {
+    path: 'docs',
+    component: DocumetationComponent,
+    children: [],
   },
 ];
 

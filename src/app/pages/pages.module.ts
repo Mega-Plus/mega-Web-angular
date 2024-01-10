@@ -18,6 +18,9 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardPageComponent } from './blog-page/card-page/card-page.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { DocumetationComponent } from './documetation/documetation.component';
+import { CategoryComponent } from './documetation/category/category.component';
+import { DocumentationModule } from './documetation/documentation.module';
 @NgModule({
   declarations: [
     PagesComponent,
@@ -26,10 +29,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     ContactPageComponent,
     BlogPageComponent,
     CardPageComponent,
+ 
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
+    DocumentationModule,
     HomeModule,
     MatIconModule,
     MatMenuModule,

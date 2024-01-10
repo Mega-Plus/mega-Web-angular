@@ -29,3 +29,22 @@ body {
   white-space: wrap !important;
   overflow: hidden;
 }
+
+.mat-expansion-panel {
+  box-sizing: content-box;
+  display: inline !important;
+}
+
+.mat-expansion-panel-header {
+  padding: 0px !important;
+}
+
+.mat-expansion-panel:not(.mat-expanded)
+  .mat-expansion-panel-header:hover:not([aria-disabled="true"]) {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+.mat-expansion-panel-header:not([aria-disabled="true"]) {
+  cursor: pointer;
+}

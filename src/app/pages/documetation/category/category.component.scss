@@ -1,0 +1,14 @@
+.bd-links-link {
+  padding: 0.1875rem 0.5rem;
+  margin-top: 0.125rem;
+  margin-left: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bd-links-link:hover,
+.bd-links-link.active {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(#d63384, 0.1);
+}

@@ -1,0 +1,337 @@
+<div>
+  <div
+    class="d-flex flex-column flex-shrink-0 p-3 bg-light"
+    style="width: 280px"
+  >
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="bd-links-group py-2">
+        <strong class="w-semibold"> პროდუქცია </strong>
+
+        <ul class="list-unstyled fw-normal pb-2 small">
+          <li>
+            <a class="bd-links-link d-inline-block rounded"
+              >ინფორმაცია პროდუქციის შესახებ
+            </a>
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >ფილტრაცია</a
+            >
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >პროდუქციის ჩასწორება</a
+            >
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >პროდუქციის შექმნა/ჩასწორება</a
+            >
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >ჯგუფების კონტროლი</a
+            >
+          </li>
+          <li>
+            <mat-accordion>
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-description>
+                    <li>
+                      <a href="" class="bd-links-link d-inline-block rounded"
+                        >ფასდაკლებების მართვა</a
+                      >
+                    </li>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded w-100"
+                    >საათობრივი ფასდაკლება</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded"
+                    >აქცია</a
+                  >
+                </li>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </li>
+          <li>
+            <mat-accordion>
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-description>
+                    <li>
+                      <a href="" class="bd-links-link d-inline-block rounded"
+                        >კალკულაცია</a
+                      >
+                    </li>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded w-100"
+                    >როგორ შევქმნათ კალკულაცია</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded"
+                    >კალკულაციასთან დაკავშირებული პრობლემები</a
+                  >
+                </li>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >წარმოება</a
+            >
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >ფასის ცვლილება</a
+            >
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >დამატებითი ფუნქციები</a
+            >
+          </li>
+        </ul>
+      </li>
+
+      <li class="bd-links-group py-2">
+        <strong>მიღება</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <mat-accordion>
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-description>
+                    <li>
+                      <a href="" class="bd-links-link d-inline-block rounded"
+                        >RS ფანჯარა</a
+                      >
+                    </li>
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded w-100"
+                    >მიღება</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/docs/5.2/forms/form-control/"
+                    class="bd-links-link d-inline-block rounded"
+                    >ზედნადების გაუქმება</a
+                  >
+                </li>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </li>
+          <li>
+            <a
+              href="/docs/5.2/forms/form-control/"
+              class="bd-links-link d-inline-block rounded"
+              >მიღება შესყიდვის აქტი</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>სალარო</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href="">ნავაჭრი</a>
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >სალაროს მოძრაობა</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >კლიენტები</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >სალაროს წიგნი</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >ფასდაკლებები</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>დაბრუნება</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>მომწოდებლები</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >ხელშეკრულებები</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >გადახდები</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >დავალიანებები</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>რეპორტები</strong>
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <li>
+                  <a href="" class="bd-links-link d-inline-block rounded"
+                    >ფილტრაცია</a
+                  >
+                </li>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded w-100"
+                >რეალიზაცია</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded"
+                >საქონლის მოძრაობა</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded"
+                >მიღება</a
+              >
+            </li>
+          </mat-expansion-panel>
+        </mat-accordion>
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-description>
+                <li>
+                  <a href="" class="bd-links-link d-inline-block rounded"
+                    >რეპორტი</a
+                  >
+                </li>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded w-100"
+                >მომწოდებლები</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded"
+                >ნაშთები</a
+              >
+            </li>
+            <li>
+              <a
+                href="/docs/5.2/forms/form-control/"
+                class="bd-links-link d-inline-block rounded"
+                >მიღება</a
+              >
+            </li>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>კლიენტები</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>პარამეტრები</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>მომხმარებელი</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href=""
+              >მომხმარებლის შექმნა</a
+            >
+          </li>
+          <li>
+            <a class="bd-links-link d-inline-block rounded" href="">უფლებები</a>
+          </li>
+        </ul>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>რეალიზაცია</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>აღწერა</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>გადაადგილება</strong>
+      </li>
+      <li class="bd-links-group py-2">
+        <strong>ჩამოწერა</strong>
+      </li>
+    </ul>
+  </div>
+</div>
