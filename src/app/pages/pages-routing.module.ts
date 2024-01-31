@@ -101,7 +101,15 @@ const routes: Routes = [
         component: CashierComponent,
       },
       {
+        path: 'cashier/:id',
+        component: CashierComponent,
+      },
+      {
         path: 'supplier',
+        component: SuppliersComponent,
+      },
+      {
+        path: 'supplier/:id',
         component: SuppliersComponent,
       },
       {
@@ -114,6 +122,10 @@ const routes: Routes = [
       },
       {
         path: 'return',
+        component: ReturnComponent,
+      },
+      {
+        path: 'return/:id',
         component: ReturnComponent,
       },
       {
