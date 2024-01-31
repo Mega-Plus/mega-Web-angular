@@ -48,3 +48,10 @@ body {
 .mat-expansion-panel-header:not([aria-disabled="true"]) {
   cursor: pointer;
 }
+
+p {
+  margin: 0;
+}
+.mat-typography p {
+  margin: 0;
+}

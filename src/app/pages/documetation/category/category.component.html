@@ -1,43 +1,29 @@
 <div>
-  <div
-    class="d-flex flex-column flex-shrink-0 p-3 bg-light"
-    style="width: 280px"
-  >
+  <div class="p-3 bg-light">
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="bd-links-group py-2">
-        <strong class="w-semibold"> პროდუქცია </strong>
-
+        <strong class="w-semibold">პროდუქცია </strong>
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li>
-            <a class="bd-links-link d-inline-block rounded"
+          <li routerLink="product">
+            <a class="bd-links-link d-inline-block rounded w-100"
               >ინფორმაცია პროდუქციის შესახებ
             </a>
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
-              >ფილტრაცია</a
-            >
+          <li routerLink="fillter">
+            <a class="bd-links-link d-inline-block rounded">ფილტრაცია</a>
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
+          <li routerLink="fillter/editing">
+            <a class="bd-links-link d-inline-block rounded"
               >პროდუქციის ჩასწორება</a
             >
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
+          <li routerLink="fillter/create-product">
+            <a class="bd-links-link d-inline-block rounded"
               >პროდუქციის შექმნა/ჩასწორება</a
             >
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
+          <li routerLink="groupControl">
+            <a class="bd-links-link d-inline-block rounded"
               >ჯგუფების კონტროლი</a
             >
           </li>
@@ -47,28 +33,22 @@
                 (opened)="panelOpenState = true"
                 (closed)="panelOpenState = false"
               >
-                <mat-expansion-panel-header>
+                <mat-expansion-panel-header routerLink="saleControl">
                   <mat-panel-description>
                     <li>
-                      <a href="" class="bd-links-link d-inline-block rounded"
+                      <a class="bd-links-link d-inline-block rounded"
                         >ფასდაკლებების მართვა</a
                       >
                     </li>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded w-100"
+                <li routerLink="saleControl">
+                  <a class="bd-links-link d-inline-block rounded w-100"
                     >საათობრივი ფასდაკლება</a
                   >
                 </li>
-                <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded"
-                    >აქცია</a
-                  >
+                <li routerLink="saleControl/hourly">
+                  <a class="bd-links-link d-inline-block rounded">აქცია</a>
                 </li>
               </mat-expansion-panel>
             </mat-accordion>
@@ -80,49 +60,33 @@
                 (closed)="panelOpenState = false"
               >
                 <mat-expansion-panel-header>
-                  <mat-panel-description>
+                  <mat-panel-description routerLink="calculation">
                     <li>
-                      <a href="" class="bd-links-link d-inline-block rounded"
+                      <a class="bd-links-link d-inline-block rounded"
                         >კალკულაცია</a
                       >
                     </li>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded w-100"
-                    >როგორ შევქმნათ კალკულაცია</a
+                  <a class="bd-links-link d-inline-block rounded w-100">
+                    კალკულაციის შექმნა</a
                   >
                 </li>
+                <li routerLink="calculation/production">
+                  <a class="bd-links-link d-inline-block rounded">წარმოება</a>
+                </li>
                 <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded"
+                  <a class="bd-links-link d-inline-block rounded"
                     >კალკულაციასთან დაკავშირებული პრობლემები</a
                   >
                 </li>
               </mat-expansion-panel>
             </mat-accordion>
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
-              >წარმოება</a
-            >
-          </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
-              >ფასის ცვლილება</a
-            >
-          </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
+
+          <li routerLink="addFunctionality">
+            <a class="bd-links-link d-inline-block rounded"
               >დამატებითი ფუნქციები</a
             >
           </li>
@@ -132,43 +96,22 @@
       <li class="bd-links-group py-2">
         <strong>მიღება</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li>
-            <mat-accordion>
-              <mat-expansion-panel
-                (opened)="panelOpenState = true"
-                (closed)="panelOpenState = false"
-              >
-                <mat-expansion-panel-header>
-                  <mat-panel-description>
-                    <li>
-                      <a href="" class="bd-links-link d-inline-block rounded"
-                        >RS ფანჯარა</a
-                      >
-                    </li>
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded w-100"
-                    >მიღება</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="/docs/5.2/forms/form-control/"
-                    class="bd-links-link d-inline-block rounded"
-                    >ზედნადების გაუქმება</a
-                  >
-                </li>
-              </mat-expansion-panel>
-            </mat-accordion>
+          <li routerLink="rsWindow">
+            <a class="bd-links-link d-inline-block rounded">მიღება</a>
           </li>
-          <li>
-            <a
-              href="/docs/5.2/forms/form-control/"
-              class="bd-links-link d-inline-block rounded"
-              >მიღება შესყიდვის აქტი</a
+          <li routerLink="rsWindow/recieveDisable">
+            <a class="bd-links-link d-inline-block rounded"
+              >ზედნადების გაუქმება</a
+            >
+          </li>
+          <li routerLink="rsWindow/changeContract">
+            <a class="bd-links-link d-inline-block rounded"
+              >ხელშეკრულების შეცვლა</a
+            >
+          </li>
+          <li routerLink="rsWindow/buyingWithContract">
+            <a class="bd-links-link d-inline-block rounded"
+              >მიღება შესყიდვის აქტით</a
             >
           </li>
         </ul>
@@ -176,51 +119,45 @@
       <li class="bd-links-group py-2">
         <strong>სალარო</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href="">ნავაჭრი</a>
+          <li routerLink="cashier">
+            <a class="bd-links-link d-inline-block rounded">ნავაჭრი</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >სალაროს მოძრაობა</a
-            >
+          <li routerLink="cashier">
+            <a class="bd-links-link d-inline-block rounded">სალაროს მოძრაობა</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >კლიენტები</a
-            >
+          <li routerLink="cashier">
+            <a class="bd-links-link d-inline-block rounded">კლიენტები</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >სალაროს წიგნი</a
-            >
+          <li routerLink="cashier">
+            <a class="bd-links-link d-inline-block rounded">სალაროს წიგნი</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >ფასდაკლებები</a
-            >
+          <li routerLink="cashier">
+            <a class="bd-links-link d-inline-block rounded">ფასდაკლებები</a>
           </li>
         </ul>
       </li>
       <li class="bd-links-group py-2">
         <strong>დაბრუნება</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li routerLink="return">
+            <a class="bd-links-link d-inline-block rounded">დაბრუნება</a>
+          </li>
+          <li routerLink="return">
+            <a class="bd-links-link d-inline-block rounded">ხელით დაბრუნება</a>
+          </li>
+        </ul>
       </li>
       <li class="bd-links-group py-2">
         <strong>მომწოდებლები</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >ხელშეკრულებები</a
-            >
+          <li routerLink="supplier">
+            <a class="bd-links-link d-inline-block rounded">ხელშეკრულებები</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >გადახდები</a
-            >
+          <li routerLink="supplier">
+            <a class="bd-links-link d-inline-block rounded">გადახდები</a>
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
-              >დავალიანებები</a
-            >
+          <li routerLink="supplier">
+            <a class="bd-links-link d-inline-block rounded">დავალიანებები</a>
           </li>
         </ul>
       </li>
@@ -233,33 +170,23 @@
           >
             <mat-expansion-panel-header>
               <mat-panel-description>
-                <li>
-                  <a href="" class="bd-links-link d-inline-block rounded"
-                    >ფილტრაცია</a
-                  >
+                <li routerLink="reports">
+                  <a class="bd-links-link d-inline-block rounded">ფილტრაცია</a>
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded w-100"
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded w-100"
                 >რეალიზაცია</a
               >
             </li>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded"
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded"
                 >საქონლის მოძრაობა</a
               >
             </li>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded"
-                >მიღება</a
-              >
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded">მიღება</a>
             </li>
           </mat-expansion-panel>
         </mat-accordion>
@@ -270,33 +197,21 @@
           >
             <mat-expansion-panel-header>
               <mat-panel-description>
-                <li>
-                  <a href="" class="bd-links-link d-inline-block rounded"
-                    >რეპორტი</a
-                  >
+                <li routerLink="reports">
+                  <a class="bd-links-link d-inline-block rounded">რეპორტი</a>
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded w-100"
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded w-100"
                 >მომწოდებლები</a
               >
             </li>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded"
-                >ნაშთები</a
-              >
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded">ნაშთები</a>
             </li>
-            <li>
-              <a
-                href="/docs/5.2/forms/form-control/"
-                class="bd-links-link d-inline-block rounded"
-                >მიღება</a
-              >
+            <li routerLink="reports">
+              <a class="bd-links-link d-inline-block rounded">მიღება</a>
             </li>
           </mat-expansion-panel>
         </mat-accordion>
@@ -306,22 +221,38 @@
       </li>
       <li class="bd-links-group py-2">
         <strong>პარამეტრები</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li routerLink="parameters">
+            <a class="bd-links-link d-inline-block rounded">სასწორები</a>
+          </li>
+          <li routerLink="parameters">
+            <a class="bd-links-link d-inline-block rounded">პრინტერები</a>
+          </li>
+        </ul>
       </li>
       <li class="bd-links-group py-2">
         <strong>მომხმარებელი</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href=""
+          <li routerLink="users">
+            <a class="bd-links-link d-inline-block rounded"
               >მომხმარებლის შექმნა</a
             >
           </li>
-          <li>
-            <a class="bd-links-link d-inline-block rounded" href="">უფლებები</a>
+          <li routerLink="users">
+            <a class="bd-links-link d-inline-block rounded">უფლებები</a>
           </li>
         </ul>
       </li>
       <li class="bd-links-group py-2">
         <strong>რეალიზაცია</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li routerLink="realization">
+            <a class="bd-links-link d-inline-block rounded">რეალიზაცია</a>
+          </li>
+          <li routerLink="realization">
+            <a class="bd-links-link d-inline-block rounded">რეალიზაცია</a>
+          </li>
+        </ul>
       </li>
       <li class="bd-links-group py-2">
         <strong>აღწერა</strong>
@@ -331,6 +262,14 @@
       </li>
       <li class="bd-links-group py-2">
         <strong>ჩამოწერა</strong>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li routerLink="writeoff">
+            <a class="bd-links-link d-inline-block rounded">ჩამოწერა</a>
+          </li>
+          <li routerLink="writeoff">
+            <a class="bd-links-link d-inline-block rounded">ჩამოწერა</a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
