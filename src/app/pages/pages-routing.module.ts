@@ -117,7 +117,15 @@ const routes: Routes = [
         component: ReportsComponent,
       },
       {
+        path: 'reports/:id',
+        component: ReportsComponent,
+      },
+      {
         path: 'users',
+        component: UsersComponent,
+      },
+      {
+        path: 'users/:id',
         component: UsersComponent,
       },
       {
@@ -137,7 +145,7 @@ const routes: Routes = [
         component: RealizationComponent,
       },
       {
-        path: 'writeoff',
+        path: 'writeoff/:id',
         component: WriteOffComponent,
       },
     ],

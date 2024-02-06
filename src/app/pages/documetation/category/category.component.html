@@ -151,13 +151,15 @@
         <strong>მომწოდებლები</strong>
         <ul class="nav nav-pills flex-column mb-auto">
           <li routerLink="supplier">
-            <a class="bd-links-link d-inline-block rounded">ხელშეკრულებები</a>
+            <a class="bd-links-link d-inline-block rounded">მომწოდებლები</a>
           </li>
-          <li routerLink="supplier">
+          <li routerLink="supplier/create-supplier">
+            <a class="bd-links-link d-inline-block rounded"
+              >მომწოდებლის შექმნა</a
+            >
+          </li>
+          <li routerLink="supplier/pay">
             <a class="bd-links-link d-inline-block rounded">გადახდები</a>
-          </li>
-          <li routerLink="supplier">
-            <a class="bd-links-link d-inline-block rounded">დავალიანებები</a>
           </li>
         </ul>
       </li>
@@ -175,17 +177,13 @@
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li routerLink="reports">
+            <li routerLink="reports/realize">
               <a class="bd-links-link d-inline-block rounded w-100"
                 >რეალიზაცია</a
               >
             </li>
-            <li routerLink="reports">
-              <a class="bd-links-link d-inline-block rounded"
-                >საქონლის მოძრაობა</a
-              >
-            </li>
-            <li routerLink="reports">
+
+            <li routerLink="reports/recieve">
               <a class="bd-links-link d-inline-block rounded">მიღება</a>
             </li>
           </mat-expansion-panel>
@@ -202,16 +200,13 @@
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li routerLink="reports">
+            <li routerLink="reports/supplier">
               <a class="bd-links-link d-inline-block rounded w-100"
                 >მომწოდებლები</a
               >
             </li>
-            <li routerLink="reports">
+            <li routerLink="reports/balance">
               <a class="bd-links-link d-inline-block rounded">ნაშთები</a>
-            </li>
-            <li routerLink="reports">
-              <a class="bd-links-link d-inline-block rounded">მიღება</a>
             </li>
           </mat-expansion-panel>
         </mat-accordion>
@@ -233,12 +228,15 @@
       <li class="bd-links-group py-2">
         <strong>მომხმარებელი</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="users">
+          <li routerLink="users/create">
             <a class="bd-links-link d-inline-block rounded"
               >მომხმარებლის შექმნა</a
             >
           </li>
-          <li routerLink="users">
+          <li routerLink="users/password">
+            <a class="bd-links-link d-inline-block rounded">პაროლის შეცვლა</a>
+          </li>
+          <li routerLink="users/permissions">
             <a class="bd-links-link d-inline-block rounded">უფლებები</a>
           </li>
         </ul>
@@ -246,9 +244,6 @@
       <li class="bd-links-group py-2">
         <strong>რეალიზაცია</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="realization">
-            <a class="bd-links-link d-inline-block rounded">რეალიზაცია</a>
-          </li>
           <li routerLink="realization">
             <a class="bd-links-link d-inline-block rounded">რეალიზაცია</a>
           </li>
@@ -263,11 +258,13 @@
       <li class="bd-links-group py-2">
         <strong>ჩამოწერა</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="writeoff">
+          <li routerLink="writeoff/main">
             <a class="bd-links-link d-inline-block rounded">ჩამოწერა</a>
           </li>
-          <li routerLink="writeoff">
-            <a class="bd-links-link d-inline-block rounded">ჩამოწერა</a>
+          <li routerLink="writeoff/cancel">
+            <a class="bd-links-link d-inline-block rounded"
+              >ჩამოწერის გაუქმება</a
+            >
           </li>
         </ul>
       </li>
