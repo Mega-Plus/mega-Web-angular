@@ -28,6 +28,7 @@ export class ReturnComponent implements AfterViewInit {
           }, 0);
         } else {
           this.viewPortScroller.scrollToPosition([0, 0]);
+          this.viewPortScroller.setOffset([0, 100]);
         }
       });
   }

@@ -7,9 +7,13 @@
   cursor: pointer;
   width: 100%;
 }
-
-.bd-links-link:hover,
-.bd-links-link.active {
+.bd-links-link:hover {
+  background-color: #0d6efd;
+}
+.active:hover {
   color: rgba(0, 0, 0, 0.85);
-  background-color: rgba(#d63384, 0.1);
+}
+.active {
+  border-radius: 100px;
+  background-color: #0d6efd;
 }

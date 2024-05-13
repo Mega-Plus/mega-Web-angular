@@ -4,25 +4,45 @@
       <li class="bd-links-group py-2">
         <strong class="w-semibold">პროდუქცია </strong>
         <ul class="list-unstyled fw-normal pb-2 small">
-          <li routerLink="product">
+          <li
+            routerLink="product"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded w-100"
               >ინფორმაცია პროდუქციის შესახებ
             </a>
           </li>
-          <li routerLink="fillter">
+          <li
+            routerLink="fillter"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">ფილტრაცია</a>
           </li>
-          <li routerLink="fillter/editing">
+          <li
+            routerLink="fillter/editing"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >პროდუქციის ჩასწორება</a
             >
           </li>
-          <li routerLink="fillter/create-product">
+          <li
+            routerLink="fillter/create-product"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >პროდუქციის შექმნა/ჩასწორება</a
             >
           </li>
-          <li routerLink="groupControl">
+          <li
+            routerLink="groupControl"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >ჯგუფების კონტროლი</a
             >
@@ -35,19 +55,30 @@
               >
                 <mat-expansion-panel-header routerLink="saleControl">
                   <mat-panel-description>
-                    <li>
+                    <li
+                      routerLinkActive="active"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                    >
                       <a class="bd-links-link d-inline-block rounded"
                         >ფასდაკლებების მართვა</a
                       >
                     </li>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <li routerLink="saleControl">
+                <li
+                  routerLink="saleControl"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded w-100"
                     >საათობრივი ფასდაკლება</a
                   >
                 </li>
-                <li routerLink="saleControl/hourly">
+                <li
+                  routerLink="saleControl/hourly"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded">აქცია</a>
                 </li>
               </mat-expansion-panel>
@@ -61,19 +92,29 @@
               >
                 <mat-expansion-panel-header>
                   <mat-panel-description routerLink="calculation">
-                    <li>
+                    <li
+                      routerLinkActive="active"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                    >
                       <a class="bd-links-link d-inline-block rounded"
                         >კალკულაცია</a
                       >
                     </li>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <li>
+                <li
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded w-100">
                     კალკულაციის შექმნა</a
                   >
                 </li>
-                <li routerLink="calculation/production">
+                <li
+                  routerLink="calculation/production"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded">წარმოება</a>
                 </li>
                 <li>
@@ -85,7 +126,11 @@
             </mat-accordion>
           </li>
 
-          <li routerLink="addFunctionality">
+          <li
+            routerLink="addFunctionality"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >დამატებითი ფუნქციები</a
             >
@@ -96,20 +141,36 @@
       <li class="bd-links-group py-2">
         <strong>მიღება</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="rsWindow">
+          <li
+            routerLink="rsWindow"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">მიღება</a>
           </li>
-          <li routerLink="rsWindow/recieveDisable">
+          <li
+            routerLink="rsWindow/recieveDisable"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >ზედნადების გაუქმება</a
             >
           </li>
-          <li routerLink="rsWindow/changeContract">
+          <li
+            routerLink="rsWindow/changeContract"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >ხელშეკრულების შეცვლა</a
             >
           </li>
-          <li routerLink="rsWindow/buyingWithContract">
+          <li
+            routerLink="rsWindow/buyingWithContract"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >მიღება შესყიდვის აქტით</a
             >
@@ -119,30 +180,58 @@
       <li class="bd-links-group py-2">
         <strong>სალარო</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="cashier">
+          <li
+            routerLink="cashier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">ნავაჭრი</a>
           </li>
-          <li routerLink="cashier/moveCashier">
+          <li
+            routerLink="cashier/moveCashier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">სალაროს მოძრაობა</a>
           </li>
-          <li routerLink="cashier/client">
+          <li
+            routerLink="cashier/client"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">კლიენტები</a>
           </li>
-          <li routerLink="cashier">
+          <li
+            routerLink="cashier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">სალაროს წიგნი</a>
           </li>
-          <li routerLink="cashier">
+          <li
+            routerLink="cashier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">ფასდაკლებები</a>
           </li>
         </ul>
       </li>
-      <li class="bd-links-group py-2">
+      <li class="bd-links-group py-2" routerLinkActive="active">
         <strong>დაბრუნება</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="return">
+          <li
+            routerLink="return"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">დაბრუნება</a>
           </li>
-          <li routerLink="return/handReturn">
+          <li
+            routerLink="return/handReturn"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">ხელით დაბრუნება</a>
           </li>
         </ul>
@@ -150,15 +239,27 @@
       <li class="bd-links-group py-2">
         <strong>მომწოდებლები</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="supplier">
+          <li
+            routerLink="supplier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">მომწოდებლები</a>
           </li>
-          <li routerLink="supplier/create-supplier">
+          <li
+            routerLink="supplier/create-supplier"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >მომწოდებლის შექმნა</a
             >
           </li>
-          <li routerLink="supplier/pay">
+          <li
+            routerLink="supplier/pay"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">გადახდები</a>
           </li>
         </ul>
@@ -172,18 +273,30 @@
           >
             <mat-expansion-panel-header>
               <mat-panel-description>
-                <li routerLink="reports">
+                <li
+                  routerLink="reports"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded">ფილტრაცია</a>
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li routerLink="reports/realize">
+            <li
+              routerLink="reports/realize"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <a class="bd-links-link d-inline-block rounded w-100"
                 >რეალიზაცია</a
               >
             </li>
 
-            <li routerLink="reports/recieve">
+            <li
+              routerLink="reports/recieve"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <a class="bd-links-link d-inline-block rounded">მიღება</a>
             </li>
           </mat-expansion-panel>
@@ -195,17 +308,29 @@
           >
             <mat-expansion-panel-header>
               <mat-panel-description>
-                <li routerLink="reports">
+                <li
+                  routerLink="reports"
+                  routerLinkActive="active"
+                  [routerLinkActiveOptions]="{ exact: true }"
+                >
                   <a class="bd-links-link d-inline-block rounded">რეპორტი</a>
                 </li>
               </mat-panel-description>
             </mat-expansion-panel-header>
-            <li routerLink="reports/supplier">
+            <li
+              routerLink="reports/supplier"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <a class="bd-links-link d-inline-block rounded w-100"
                 >მომწოდებლები</a
               >
             </li>
-            <li routerLink="reports/balance">
+            <li
+              routerLink="reports/balance"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
               <a class="bd-links-link d-inline-block rounded">ნაშთები</a>
             </li>
           </mat-expansion-panel>
@@ -217,10 +342,18 @@
       <li class="bd-links-group py-2">
         <strong>პარამეტრები</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="parameters">
+          <li
+            routerLink="parameters"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">სასწორები</a>
           </li>
-          <li routerLink="parameters">
+          <li
+            routerLink="parameters"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">პრინტერები</a>
           </li>
         </ul>
@@ -228,15 +361,27 @@
       <li class="bd-links-group py-2">
         <strong>მომხმარებელი</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="users/create">
+          <li
+            routerLink="users/create"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >მომხმარებლის შექმნა</a
             >
           </li>
-          <li routerLink="users/password">
+          <li
+            routerLink="users/password"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">პაროლის შეცვლა</a>
           </li>
-          <li routerLink="users/permissions">
+          <li
+            routerLink="users/permissions"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">უფლებები</a>
           </li>
         </ul>
@@ -244,7 +389,11 @@
       <li class="bd-links-group py-2">
         <strong>რეალიზაცია</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="realization">
+          <li
+            routerLink="realization"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">რეალიზაცია</a>
           </li>
         </ul>
@@ -258,10 +407,19 @@
       <li class="bd-links-group py-2">
         <strong>ჩამოწერა</strong>
         <ul class="nav nav-pills flex-column mb-auto">
-          <li routerLink="writeoff/main">
+          <li
+            routerLink="writeoff/main"
+            routerLinkActive="active"
+           
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded">ჩამოწერა</a>
           </li>
-          <li routerLink="writeoff/cancel">
+          <li
+            routerLink="writeoff/cancel"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
             <a class="bd-links-link d-inline-block rounded"
               >ჩამოწერის გაუქმება</a
             >

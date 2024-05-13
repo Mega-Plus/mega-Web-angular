@@ -24,6 +24,7 @@ export class SaleControlComponent {
         console.log(res);
         setTimeout(() => {
           this.viewPortScroller.scrollToAnchor(this.params);
+          this.viewPortScroller.setOffset([0, 100]);
         }, 0);
       });
   }

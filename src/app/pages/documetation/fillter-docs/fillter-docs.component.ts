@@ -30,6 +30,7 @@ export class FillterDocsComponent implements AfterViewInit {
         console.log(res);
         setTimeout(() => {
           this.viewPortScroller.scrollToAnchor(this.params);
+          this.viewPortScroller.setOffset([0, 100]);
         }, 0);
       });
   }
